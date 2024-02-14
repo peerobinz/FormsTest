@@ -1,0 +1,24 @@
+<div class="container">
+  <img src="assets/botnoi.svg" alt="Botnoi Logo">
+  <form (ngSubmit)="onLogin()">
+    <div class="form-group">
+      <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required placeholder="username">
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input type="{{ passwordVisible ? 'text' : 'password' }}" class="form-control" id="password" [(ngModel)]="password" name="password" required placeholder="password">
+        <div class="input-group-append">
+          <span class="input-group-text" (click)="togglePasswordVisibility()">
+            <i [hidden]="passwordVisible"  class="bi bi-eye">show</i>
+            <i [hidden]="!passwordVisible" class="bi bi-eye-slash">hide</i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">LOGIN</button>
+  </form>
+  <p class="dont">Don't have an account?     <span class="signup" (click)="navigateToRegister()">Sign up</span></p>
+</div>
+
+
+<button type="button" class="btn btn-secondary">Secondary</button>
