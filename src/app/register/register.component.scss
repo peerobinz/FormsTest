@@ -2,12 +2,13 @@
 
 .container {
     width: 500px;
-    height: 950px;
+    height: 100vh;
     margin: auto;
-    background-color: #3b3b3b;
+    background-color: #2e2e2e;
     border-radius: 25px;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 .regis{
   margin-top: 50px;
@@ -26,7 +27,8 @@ label {
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-    width: 300px; 
+    width: 470px; 
+    height: 50px;
     padding: 10px;
     border: 5px solid #ccc;
     border-radius: 5px;
@@ -34,6 +36,7 @@ input[type="email"] {
     margin-bottom: 10px; 
     box-sizing: border-box;
     border-radius: 10px;
+    
 }
 
 button {
