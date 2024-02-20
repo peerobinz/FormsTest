@@ -1,0 +1,22 @@
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .btn{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    font-size: 30px;
+    background-color: white;
+    color: #EA7C69;
+    border: none;
+  }
+
+  .btn.btn-secondary:active {
+    background-color: #EA7C69; 
+    color: white; 
+  }
