@@ -7,8 +7,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MenuComponent } from './menu/menu.component';
+import { ShopOrSettingComponent } from './shop-or-setting/shop-or-setting.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MenuComponent } from './menu/menu.component';
     RegisterComponent,
     LoginComponent,
     MenuComponent,
+    ShopOrSettingComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,8 +25,8 @@ import { MenuComponent } from './menu/menu.component';
     FormsModule ,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    NgbModule
-  ],
+    NgbModule,
+     ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

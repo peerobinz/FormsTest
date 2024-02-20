@@ -1,0 +1,224 @@
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  background-color: #2e2e2e;
+}
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    padding: 10px;
+  }
+
+  #sidebar {
+    width: 30px; 
+  }
+
+  .logo {
+    max-width: 20px; 
+  }
+
+  .recleftMiddle {
+    width: 100%; 
+    font-size: 16px; 
+  }
+  #myTab {
+    justify-content: flex-start;
+  }
+  .row-rec {
+    margin-top: 10px; 
+  }
+
+  .rectangle {
+    margin: 2px;
+  }
+}
+
+
+.row-rec {
+  display: flex; 
+  flex-wrap: nowrap; 
+  gap: 15px;
+  margin-top: 25px;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+
+.header1{
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.date{
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.container{
+  background-color: rgb(85, 65, 39);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#sidebar {
+  width: 77px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  align-items: center; 
+  border-right: 3.5px solid rgb(90, 170, 255);
+  background-color: #2d2a30; 
+  justify-content: center;
+}
+
+.nav.flex-column {
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
+}
+
+.nav-item {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; 
+}
+
+.icon-container{
+  color: rgb(255, 138, 109);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.btn{
+  background-color: transparent;
+}
+
+.icon-container:hover{
+  background-color: rgb(255, 138, 109);
+  color: white;
+  visibility: visible;
+  
+}
+.btn-primary{
+  border:none;
+  color: #5a5a5a;
+  justify-content: flex-start;
+}
+
+.btn-primary-table{
+  border:none;
+  color: #5a5a5a;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.btn-primary-table:active{
+  background-color: #fff; 
+  color: #5a5a5a;
+}
+
+.btn-primary:active { 
+  background-color: #fff; 
+  color: #5a5a5a; 
+}
+.out-icon-container {
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50px;
+  position: fixed;
+  bottom: 0;
+  color: rgb(255, 138, 109) ;
+}
+.out-icon-container:hover{
+  background-color: rgb(255, 138, 109) ;
+  color: white;
+  visibility: visible;
+}
+
+.logo {
+  max-width: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bi-house-door{
+  font-size: 20px;
+}
+
+.bi-dash-circle{
+  font-size: 20px;
+}
+
+.bi-box-arrow-right{
+  font-size: 20px;
+  
+}
+
+.rec-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: nowrap; 
+
+}
+
+.rectangle {
+  background-color: rgb(168, 168, 168); 
+  margin: 10px;
+  margin: 5px;
+}
+
+.recleft1 {
+  width: 30px;
+  height: 30px;
+  order: 1;
+}
+
+.recleft2 {
+  order: 2; 
+  width: 30px;
+  height: 30px;
+}
+
+.recleftMiddle {
+  order: 3; 
+  width: 40px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.recright1 {
+  order: 4; 
+  width: 30px;
+  height: 30px;
+}
+
+.recright2 {
+  order: 5; 
+  width: 30px;
+  height: 30px;
+}
+

@@ -1,17 +1,37 @@
 
-<div class="container">
-<img src="assets/botnoi.svg" alt="Botnoi Logo" class="logo">
-  <form class="needs-validation" (ngSubmit)="onLogin()" novalidate>
-    <div class="form-group">
-      <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required placeholder="Username">
-      <div class="invalid-feedback">Please enter a username.</div>
+  <div class="container">
+    <img src="assets/botnoi.svg" alt="Botnoi Logo" class="logo">
+    <form class="needs-validation" (ngSubmit)="onLogin()" novalidate>
+      <div class="form-group">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required placeholder="Username">
+        </div>
+        <div class="invalid-feedback">Please enter a username.</div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-lock"></i></span>
+              <input type="{{ passwordVisible ? 'text' : 'password' }}" class="form-control" id="password" [(ngModel)]="password" name="password" required placeholder="Password">
+              <span class="input-group-text" (click)="togglePasswordVisibility()">
+                <span class="bi bi-eye"></span>
+              </span>
+          </div>
+        </div>
+          <div class="invalid-feedback">Please enter a password.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" >LOGIN</button>
+    </form>
+    
+    <div class="row">
+      <div class="col">
+        <p class="newUser" (click)="navigaterToShopOrSetting()">New User</p>
+      </div>
+      <div class="col">
+        <p class="signup" (click)="navigateToRegister()">Sign up</p>
+      </div>
     </div>
-    <div class="form-group">
-        <input type="{{ passwordVisible ? 'text' : 'password' }}" class="form-control" id="password" [(ngModel)]="password" name="password" required placeholder="Password">
-        <div class="invalid-feedback">Please enter a password.</div>
-    </div>
-    <button type="submit" class="btn btn-primary">LOGIN</button>
-  </form>
-  <p class="newUser" (click)="navigaterToMenu()"><span class="signup" (click)="navigateToRegister()">Sign up</span>New User</p>
+  </div>
   
-</div>

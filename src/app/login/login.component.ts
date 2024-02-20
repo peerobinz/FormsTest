@@ -34,10 +34,10 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  navigaterToMenu(){
-    console.log('Navigate to Menu');
-    this.router.navigate(['/menu']);
-    alert('Go to Menu Page');
+  navigaterToShopOrSetting(){
+    console.log('Navigate to shop-or-setting');
+    this.router.navigate(['/shop-or-setting']);
+    alert('Go to Shop Page');
   }
 
   navigateToRegister() {
